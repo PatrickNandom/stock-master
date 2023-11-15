@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: var(--lin, linear-gradient(90deg, #F7AB97 -42.88%, #071548 144.4%));
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0.125rem;
+    text-align: center;
+    gap: 0.875rem;
+    border-radius: 1.25rem;
+    background: rgba(233, 227, 227, 0.60);
+    margin: 7.0625rem 9.8125rem;
+    width: 70.125rem;
+    height: 46.9375rem;
+    color: var(--Blue-4, #071548);
+    font-family: Catamaran;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 102.5%;
+    letter-spacing: 0.256px;
+}
+
+h2 {
+    margin-bottom: 4.875rem;
+}
+
+#business__name,
+#email,
+#password {
+    width: 30rem;
+    height: 2.125rem;
+    border-radius: 0.625rem;
+    border: .0625rem solid var(--yel-3, #F05830);
+    background: var(--White, #FFF);
+}
+
+#password {
+    margin-bottom: 4.875rem;
+}
+
+#button {
+    width: 12.6875rem;
+    height: 3.375rem;
+    padding: 0.625rem 4.25rem 0.6875rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: var(--yel-3, #F05830);
+    cursor: pointer;
+    color: var(--White, #FFF);
+    font-family: Yantramanav;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 163.187%;
+    text-transform: capitalize;
+
+}
+
+#stock__master {
+    width: 16rem;
+    /* margin-bottom: ; */
+}
+
+#back__icon {
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
+}
+
+#reset {
+    margin-top: 4.875rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+#reset-span {
+    color: var(--yel-3, #F05830);
+    font-family: Catamaran;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.5%;
+    letter-spacing: 0.288px;
+}

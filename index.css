@@ -1,8 +1,40 @@
 * {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 14.824px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 180%;
+    letter-spacing: 0.237px;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 nav {
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,13 +43,15 @@ nav {
     height: 70.2px;
     background: linear-gradient(to right, #F7AB97 -42.88%, #071548);
     font-weight: 500;
-    font-size: 14.82px;
+    font-size: 1.3rem;
+    /* position: fixed; */
+    margin-top: 0px;
 }
 
 #links a {
 
     font-family: Poppins;
-    font-size: 14.824px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
     line-height: 180%;
@@ -36,6 +70,13 @@ a #login {
     border-radius: 9.41px;
     background-color: #FCDED6;
     cursor: pointer;
+    color: var(--Blue-4, #071548);
+    font-family: Yantramanav;
+    font-size: 18.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 163.187%;
+    text-transform: capitalize;
 }
 
 #links a span {
@@ -346,4 +387,13 @@ footer .social__media {
     justify-content: center;
     align-items: center;
     gap: 139px;
+}
+
+#content__6__sign__up {
+    cursor: pointer;
+}
+
+#footer__img img {
+    cursor: pointer;
+    margin: 1rem;
 }

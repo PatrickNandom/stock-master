@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Prevent horizontal scrollbar */
+        }
+
+        /* Navbar styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Sidebar styles */
+        aside {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 60px;
+            /* Height of the navbar */
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            overflow-y: auto;
+            z-index: 1;
+        }
+
+        aside a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+        }
+
+        aside a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Main content styles */
+        main {
+            margin-left: 250px;
+            /* Width of the sidebar */
+            padding: 20px;
+        }
+
+        /* Add more styling as needed */
+    </style>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <aside>
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <!-- Add more sidebar links as needed -->
+    </aside>
+
+    <main>
+        <h2>Welcome to the Dashboard</h2>
+        <p>This is a simple example of a dashboard layout with a static navbar and sidebar.</p>
+
+        <!-- Chart.js bar chart -->
+        <canvas id="barChart" width="400" height="200"></canvas>
+
+        <script>
+            // Sample data for the bar chart
+            var barChartData = {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Monthly Sales',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    data: [65, 59, 80, 81, 56]
+                }]
+            };
+
+            // Get the context of the canvas element we want to select
+            var ctx = document.getElementById('barChart').getContext('2d');
+
+            // Create the bar chart
+            var myBarChart = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+    </main>
+</body>
+
+</html>
