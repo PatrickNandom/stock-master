@@ -81,7 +81,7 @@
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
-     color: grey;
+     color: black;
      width: 120.12px;
      height: 31.2px;
      padding: 4.68px, 12.48px, 4.68px, 14.04px;
@@ -129,6 +129,10 @@
      gap: 10.54px;
      text-decoration: none;
      color: black;
+ }
+
+ a img {
+     margin-right: 10px;
  }
 
  .side__bar__logo {
